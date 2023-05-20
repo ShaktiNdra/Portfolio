@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="icon" onclick="openandclose()">
+            <span class="mobNavIcon"></span>
+        </div>
+        <nav class="nav">
+            <div class="left">
+                Shakti Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection"><div>
+                Hi, My Name is <span class="purple">Shakti</span> </div>
+                <div>
+                   and I am a possinate
+                </div>
+                <span id="element"></span>
+                <div class="btnDiv">
+                    <button class="buttton">Download Resume</button>
+                    <button class="buttton">View On Github</button>
+                </div>
+                
+            </div>
+           
+            <div class="rightSection">
+                <img src="Images/bg.png" alt="">
+            </div>
+        </section>
+<hr>
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Images/developer.png" alt="">
+                    <div class="vertical-title">
+                        HTML Devewloper(2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolor blanditiis sunt harum commodi beatae, hic, iste pariatur eius earum corporis maiores sequi ea vel facere voluptatibus exercitationem? Saepe, veritatis.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Images/developer.png" alt="">
+                    <div class="vertical-title">
+                       NodeJs. Devewloper(2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolor blanditiis sunt harum commodi beatae, hic, iste pariatur eius earum corporis maiores sequi ea vel facere voluptatibus exercitationem? Saepe, veritatis.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Images/developer.png" alt="">
+                    <div class="vertical-title">
+                        JAVA Devewloper(2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolor blanditiis sunt harum commodi beatae, hic, iste pariatur eius earum corporis maiores sequi ea vel facere voluptatibus exercitationem? Saepe, veritatis.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Images/developer.png" alt="">
+                    <div class="vertical-title">
+                        Python Devewloper(2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolor blanditiis sunt harum commodi beatae, hic, iste pariatur eius earum corporis maiores sequi ea vel facere voluptatibus exercitationem? Saepe, veritatis.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="Images/developer.png" alt="">
+                    <div class="vertical-title">
+                        Angular Devewloper(2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolor blanditiis sunt harum commodi beatae, hic, iste pariatur eius earum corporis maiores sequi ea vel facere voluptatibus exercitationem? Saepe, veritatis.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="Footer-First">
+                <h3>Shakti Developer Portfolio</h3>
+            </div>
+            <div class="Footer-Second">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact ME</a></li>
+                </ul>
+            </div>
+            <div class="Footer-Third">
+                 <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact ME</a></li>
+                </ul>
+            </div>
+            <div class="Footer-Fourth">
+                 <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact ME</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center">
+            www.codewithharry.com | &copy; all rights resorved
+        </div>
+    </footer>
+
+
+    <!-- Typed Script -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer.', 'Graphic Designer.', 'Android Developer.','Web Designer.'],
+          typeSpeed: 100,
+        });
+      </script>
+
+
+
+    <!-- Script For Navigation Bar  -->
+    <script>
+        let mobNavIcon = document.querySelector('.mobNavIcon');
+        let Nav = document.querySelector('.nav');
+        let openandclose = () => {
+            mobNavIcon.classList.toggle('closeMobNav');
+            Nav.classList.toggle('bringMobNav');
+        };
+    </script>
+</body>
+
+</html>

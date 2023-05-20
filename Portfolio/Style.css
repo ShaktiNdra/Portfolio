@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #01001d;
+    color: #fff;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background: rgb(1, 6, 49);
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 23px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+nav .left
+{
+    font-size: 1.5rem;
+}
+
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 110px 0;
+    flex-wrap: wrap;
+}
+
+.firstSection > div{
+    width: 30%;
+    min-width: 400px;
+}
+
+
+.rightSection img{
+    width: 80%;
+    margin: 50px 0;
+}
+
+.leftSection{
+    font-size: 2rem;
+}
+
+.purple{
+    color: rgb(157, 74, 235);
+}
+#element{
+    color: rgb(157, 74, 235);
+}
+
+.btnDiv{
+    margin-top: 3rem
+}
+
+.btnDiv button{
+    background: transparent;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid rgb(157, 74, 235);
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.btnDiv button:hover{
+    background: rgb(157, 74, 235);
+}
+
+
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+hr{
+    background: rgb(157, 74, 235);
+    height: 0.3px;
+    border: none;
+    margin: 40px 84px;
+}
+
+.secondSection h1{
+    font-size: 1.8rem;
+}
+
+.text-gray{
+    color: gray;
+}
+
+.secondSection .box{
+    width: 80vw;
+    height: 2px;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background: White;
+    justify-items: center;
+
+}
+
+.secondSection .vertical{
+    height: 93px ;
+    width: 1px;
+    background: White;
+    margin-right: 2rem;
+}
+
+
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -12px;
+}
+
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 130px;
+}
+
+.vertical-desc{
+    position: relative;
+    top: 75px;
+    font-size: 10px;
+    width: 130px;
+    color: gray;
+}
+
+.footer{
+    display: flex;
+    background: rgb(1, 1, 39);
+    padding: 23px 122px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer > div{
+   min-width: 152px;
+   margin: 2rem 0;
+}
+
+
+
+
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .text-center{
+    color: gray;
+    text-align: center;
+}
